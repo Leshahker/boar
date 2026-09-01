@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Библиотека — БОАР</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,500;0,7..72,600;0,7..72,700;1,7..72,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="proto">
+    <div class="wrap">
+      <span><strong>Макет для согласования</strong> · фильтры работают, файлы не скачиваются</span>
+      <span>Библиотека</span>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="logo" href="index.html">
+        <svg class="logo-mark" viewBox="0 0 36 36" aria-hidden="true">
+          <rect x="1" y="1" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M6 22h5l2-8 3 14 3-10 2 4h9" fill="none" stroke="currentColor" stroke-width="1.6"/>
+        </svg>
+        <span class="logo-text"><b>БОАР</b><span>Общество АиР</span></span>
+      </a>
+      <button class="menu-toggle" type="button" data-menu aria-expanded="false" aria-label="Меню">☰</button>
+      <nav class="primary">
+        <a href="index.html">Главная</a>
+        <a href="about.html">Общество</a>
+        <a href="events.html">События</a>
+        <a href="library.html" aria-current="page">Библиотека</a>
+        <a href="patients.html">Пациентам</a>
+      </nav>
+      <a class="btn header-cta" href="join.html">Вступить</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-hero">
+      <div class="wrap">
+        <p class="crumbs"><a href="index.html">Главная</a> / Библиотека</p>
+        <p class="eyebrow">Каталог</p>
+        <h1>Документы, книги, слайды</h1>
+        <p class="lead">Вместо обложек без подписей — список с типом, годом и темой. Фильтры ниже можно нажать.</p>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="filters" data-filters>
+          <button class="filter is-on" type="button" data-filter="all">Все</button>
+          <button class="filter" type="button" data-filter="norm">Нормативка</button>
+          <button class="filter" type="button" data-filter="book">Книги</button>
+          <button class="filter" type="button" data-filter="slides">Презентации</button>
+          <button class="filter" type="button" data-filter="ceea">CEEA</button>
+        </div>
+
+        <div class="doc-row" data-type="norm">
+          <div>
+            <strong>Инструкция об организации анестезиолого-реанимационной службы</strong>
+            <span>Минздрав РБ · приказ / инструкция</span>
+          </div>
+          <span>Нормативка</span>
+          <span>PDF</span>
+          <a class="btn btn-ghost" href="#">Открыть</a>
+        </div>
+        <div class="doc-row" data-type="norm">
+          <div>
+            <strong>Примерные штатные нормативы</strong>
+            <span>Постановление · служба АиР</span>
+          </div>
+          <span>Нормативка</span>
+          <span>PDF</span>
+          <a class="btn btn-ghost" href="#">Открыть</a>
+        </div>
+        <div class="doc-row" data-type="book">
+          <div>
+            <strong>Основы ИВЛ</strong>
+            <span>А.С. Горячев, И.А. Савин · при наличии права на размещение</span>
+          </div>
+          <span>Книги</span>
+          <span>PDF</span>
+          <a class="btn btn-ghost" href="#">Открыть</a>
+        </div>
+        <div class="doc-row" data-type="slides">
+          <div>
+            <strong>Трудные дыхательные пути в практике</strong>
+            <span>Швец А.А. · заседание общества</span>
+          </div>
+          <span>Презентации</span>
+          <span>PPTX</span>
+          <a class="btn btn-ghost" href="#">Открыть</a>
+        </div>
+        <div class="doc-row" data-type="ceea">
+          <div>
+            <strong>Курс CEEA, Минск — цикл по дыханию</strong>
+            <span>Архив презентаций · даты актуального цикла вынести наверх</span>
+          </div>
+          <span>CEEA</span>
+          <span>ZIP</span>
+          <a class="btn btn-ghost" href="#">Открыть</a>
+        </div>
+        <p class="note" style="margin-top:24px">На боевом сайте здесь будут только материалы, на которые у общества есть права. Чужие книги — по лицензии или ссылкой на издателя.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="copyright">
+        <a href="index.html" style="color:#c5d4ce">← На главную макета</a>
+        <span>БОАР · макет библиотеки</span>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
