@@ -15,7 +15,7 @@
   --danger: #8a3a2a;
   --ok: #2b5c45;
   --shadow: 0 1px 0 rgba(23, 36, 31, 0.04);
-  --header-h: 72px;
+  --header-h: 76px;
   --max: 1120px;
 }
 
@@ -107,7 +107,8 @@ h3 { font-size: 22px; margin: 0 0 8px; }
   display: flex;
   align-items: center;
   gap: 28px;
-  height: var(--header-h);
+  min-height: var(--header-h);
+  padding: 10px 0;
 }
 .logo {
   display: flex;
@@ -116,9 +117,11 @@ h3 { font-size: 22px; margin: 0 0 8px; }
   flex: none;
 }
 .logo-mark {
-  width: 36px;
-  height: 36px;
-  color: var(--pine);
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  flex: none;
+  background: transparent;
 }
 .logo-text {
   display: flex;
